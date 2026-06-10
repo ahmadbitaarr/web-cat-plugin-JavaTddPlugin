@@ -5,7 +5,8 @@
        ============================================================ -->
 
   <property environment="env"/>
-
+  <property name="pluginHome" value="../plugins"/>
+  <property name="referenceImplementationClassDir" value="${pluginHome}/refimpl"/>
   <property name="tempdir" value="local_tmp"/>
   <property name="assignmentClassDir"   value="${pluginHome}/empty"/>
   <property name="assignmentClassFiles" value="${pluginHome}/empty"/>
@@ -27,8 +28,7 @@
   <property name="PDF.dest"             value="${resultDir}/${userName}.pdf"/>
   <property name="pmdConfigFile"        value="${pluginHome}/pmd.xml"/>
   <property name="psfile"               value="${resultDir}/${userName}.ps"/>
-  <property name="security.manager"     value="java.security.manager"/>
-  <property name="studentBuild"         value="${resultDir}/studentbin"/>
+  <property name="studentBuild" value="../example/studentbin/classes"/>
   <property name="student.results.dir"  value="${resultDir}/student.results"/>
   <property name="publicDir"            value="${resultDir}/public"/>
   <property name="diagrams.dir"         value="${publicDir}/diagrams"/>
