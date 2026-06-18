@@ -1,0 +1,20 @@
+Buildfile: /home/ahmad/web-cat-plugin-JavaTddPlugin/build.xml
+
+check.properties:
+
+regenerate.properties:
+
+init:
+[propertyfile] Updating property file: /home/ahmad/web-cat-plugin-JavaTddPlugin/Properties
+
+check.local.student.jar:
+
+get.local.student.jar:
+
+build.java.jars:
+      [jar] Building jar: /home/ahmad/web-cat-plugin-JavaTddPlugin/src/JavaTddPluginSupport.jar
+      [jar] Building jar: /home/ahmad/web-cat-plugin-JavaTddPlugin/webcat-support-4.1.2.jar
+
+javadoc:
+    [mkdir] Created dir: /home/ahmad/web-cat-plugin-JavaTddPlugin/api
+  [javadoc] Generating Javadoc

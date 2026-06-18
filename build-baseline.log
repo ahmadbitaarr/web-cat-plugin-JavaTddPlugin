@@ -1,0 +1,15 @@
+Buildfile: /home/ahmad/web-cat-plugin-JavaTddPlugin/build.xml
+
+check.properties:
+
+regenerate.properties:
+
+init:
+[propertyfile] Updating property file: /home/ahmad/web-cat-plugin-JavaTddPlugin/Properties
+
+check.local.student.jar:
+
+get.local.student.jar:
+
+build.java.jars:
+   [delete] Deleting: /home/ahmad/web-cat-plugin-JavaTddPlugin/src/JavaTddPluginSupport.jar

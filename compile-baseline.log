@@ -1,0 +1,93 @@
+java-src/net/sf/webcat/MutableStringBufferInputStream.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public MutableStringBufferInputStream(String contents)
+           ^
+java-src/net/sf/webcat/MutableStringBufferInputStream.java:42: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public MutableStringBufferInputStream(InputStream contents)
+           ^
+java-src/net/sf/webcat/MutableStringBufferInputStream.java:16: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class MutableStringBufferInputStream
+       ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:30: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(OutputStream out)
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:50: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(OutputStream out, boolean autoFlush)
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:74: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:106: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(String fileName)
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:143: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(String fileName, String csn)
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:173: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(File file)
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:210: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintStreamWithHistory(File file, String csn)
+           ^
+java-src/net/sf/webcat/PrintStreamWithHistory.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class PrintStreamWithHistory
+       ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:24: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory()
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:37: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(Writer out)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:53: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(Writer out, boolean autoFlush)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:68: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(OutputStream out)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:86: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(OutputStream out, boolean autoFlush)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:114: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(String fileName)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:150: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(String fileName, String csn)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:179: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(File file)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:215: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public PrintWriterWithHistory(File file, String csn)
+           ^
+java-src/net/sf/webcat/PrintWriterWithHistory.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class PrintWriterWithHistory
+       ^
+java-src/net/sf/webcat/StringNormalizer.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public StringNormalizer()
+           ^
+java-src/net/sf/webcat/StringNormalizer.java:42: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public StringNormalizer(boolean useStandardRules)
+           ^
+java-src/net/sf/webcat/StringNormalizer.java:55: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public StringNormalizer(StandardRule ... rules)
+           ^
+java-src/net/sf/webcat/StringNormalizer.java:68: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public StringNormalizer(NormalizerRule ... rules)
+           ^
+java-src/net/sf/webcat/StringNormalizer.java:81: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public StringNormalizer(Collection<? extends NormalizerRule> rules)
+           ^
+java-src/net/sf/webcat/SystemIOUtilities.java:12: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class SystemIOUtilities
+       ^
+java-src/net/sf/webcat/TestCase.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public TestCase()
+           ^
+java-src/net/sf/webcat/TestCase.java:34: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public TestCase(String name)
+           ^
+java-src/net/sf/webcat/TestCase.java:12: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class TestCase
+       ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+30 warnings
