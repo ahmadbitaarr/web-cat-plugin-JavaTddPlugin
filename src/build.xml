@@ -5,11 +5,12 @@
        ============================================================ -->
 
   <property environment="env"/>
-
+  <property name="PerlForPlugins.perl.exe" value="/usr/bin/perl"/>
   <property name="tempdir" value="local_tmp"/>
+  <property name="pluginHome" value="."/>
   <property name="assignmentClassDir"   value="${pluginHome}/empty"/>
   <property name="assignmentClassFiles" value="${pluginHome}/empty"/>
-  <property name="referenceImplementationClassDir"  value="${pluginHome}/empty"/>
+  <property name="referenceImplementationClassDir" value="${pluginHome}/refimpl"/>
   <property name="referenceImplementationClassFiles"  value="${pluginHome}/empty"/>
   <property name="checkstyleConfigFile"
             value="${pluginHome}/checkstyle.xml"/>
@@ -379,6 +380,8 @@ staticAnalysisSrcExclusionPattern = ${staticAnalysisSrcExclusionPattern}
       <formatter
         classname="net.sf.webcat.plugins.javatddplugin.HintingJUnitResultFormatter"
         extension=".inc"/>
+      <formatter classname="net.sf.webcat.plugins.javatddplugin.ExpectedActualFormatter"
+           extension="-expected-actual.txt"/>
       <formatter
         classname="net.sf.webcat.plugins.javatddplugin.BasicJUnitResultFormatter"
         extension="-results.txt"/>
@@ -406,6 +409,11 @@ staticAnalysisSrcExclusionPattern = ${staticAnalysisSrcExclusionPattern}
       <fileset dir="${instr.results.dir}"
                includes="*-out.txt"
                casesensitive="false"/>
+    </concat>
+    <concat destfile="${resultDir}/instr-expected-actual.txt">
+    <fileset dir="${instr.results.dir}"
+            includes="*-expected-actual.txt"
+            casesensitive="false"/>
     </concat>
     <delete failonerror="false" dir="${instr.results.dir}"/>
   </target>
@@ -454,6 +462,9 @@ staticAnalysisSrcExclusionPattern = ${staticAnalysisSrcExclusionPattern}
         classname="net.sf.webcat.plugins.javatddplugin.PlistJUnitResultFormatter"
         extension=".inc"/>
       <formatter
+        classname="net.sf.webcat.plugins.javatddplugin.ExpectedActualFormatter"
+        extension="-expected-actual.txt"/>
+      <formatter
         classname="net.sf.webcat.plugins.javatddplugin.BasicJUnitResultFormatter"
         extension="-results.txt"/>
       <formatter
@@ -480,6 +491,11 @@ staticAnalysisSrcExclusionPattern = ${staticAnalysisSrcExclusionPattern}
       <fileset dir="${student.results.dir}"
                includes="*-out.txt"
                casesensitive="false"/>
+    </concat>
+    <concat destfile="${resultDir}/student-expected-actual.txt">
+      <fileset dir="${student.results.dir}"
+              includes="*-expected-actual.txt"
+              casesensitive="false"/>
     </concat>
     <delete  failonerror="false" dir="${student.results.dir}"/>
     <condition property="no.coverage.data">
@@ -554,6 +570,9 @@ staticAnalysisSrcExclusionPattern = ${staticAnalysisSrcExclusionPattern}
         classname="net.sf.webcat.plugins.javatddplugin.ValidationPlistJUnitResultFormatter"
         extension=".inc"/>
       <formatter
+        classname="net.sf.webcat.plugins.javatddplugin.ExpectedActualFormatter"
+        extension="-expected-actual.txt"/>
+      <formatter
         classname="net.sf.webcat.plugins.javatddplugin.ValidationTextJUnitResultFormatter"
         extension="-results.txt"/>
       <formatter
@@ -580,6 +599,11 @@ staticAnalysisSrcExclusionPattern = ${staticAnalysisSrcExclusionPattern}
       <fileset dir="${validate.results.dir}"
                 includes="*-out.txt"
                 casesensitive="false"/>
+    </concat>
+    <concat destfile="${resultDir}/validate-expected-actual.txt">
+      <fileset dir="${validate.results.dir}"
+              includes="*-expected-actual.txt"
+              casesensitive="false"/>
     </concat>
     <delete failonerror="false" dir="${validate.results.dir}"/>
     <condition property="no.coverage.data">
